@@ -1,0 +1,14 @@
+<ion-view view-title="Login" name="login-view" class="login_screen_bg">
+  <ion-content class="padding" style="margin-top:300px">
+      
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="Email" ng-model="loginEmail">
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="loginPassword">
+          </label>
+      </div>
+      <button class="button button-block button-calm" ng-click="loginToAccount(loginEmail,loginPassword)">Login</button>
+  </ion-content>
+</ion-view>
