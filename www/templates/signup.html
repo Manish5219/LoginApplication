@@ -1,7 +1,6 @@
 <ion-view view-title="Login" name="login-view" class="signup_screen_bg">
-  <ion-content class="padding" style="margin-top:300px">
-      
-      <div class="list list-inset">
+
+      <div class="list list-inset" style="margin-top:300px">
           <label class="item item-input">
               <input type="text" placeholder="Email" ng-model="emailid">
           </label>
@@ -10,5 +9,9 @@
           </label>
       </div>
       <button class="button button-block button-calm" ng-click="SignUpToAccount(emailid,password)">Sign Up</button>
-  </ion-content>
+       <div class="row row-center" style="margin-top:15px">
+      <div class="signupAgreement">
+       By Signing Up you agree to the Terms of Services and Privacy Policy.
+      </div>
+      </div>
 </ion-view>

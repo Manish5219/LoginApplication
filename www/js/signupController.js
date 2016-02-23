@@ -31,6 +31,7 @@ $scope.password='';
                  var query = "INSERT INTO mydatatable (emailid, password) VALUES (?,?)";
                  $cordovaSQLite.execute(db, query, [emailid, password]).then(function(result) {
                  console.log("INSERT ID -> " + result.insertId);
+                  $state.go("app");
                  }, function (err) {
                  console.error(err);
                  

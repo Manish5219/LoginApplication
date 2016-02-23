@@ -1,7 +1,7 @@
 <ion-view view-title="Login" name="login-view" class="login_screen_bg">
-  <ion-content class="padding" style="margin-top:300px">
+  
       
-      <div class="list list-inset">
+      <div class="list list-inset" style="margin-top:300px">
           <label class="item item-input">
               <input type="text" placeholder="Email" ng-model="loginEmail">
           </label>
@@ -10,5 +10,9 @@
           </label>
       </div>
       <button class="button button-block button-calm" ng-click="loginToAccount(loginEmail,loginPassword)">Login</button>
-  </ion-content>
+      <p class="text-center">
+              <a href="#/forgot-password">Forgot password</a>
+            </p>
+  
 </ion-view>
+

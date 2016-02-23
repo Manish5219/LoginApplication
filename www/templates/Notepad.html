@@ -1,0 +1,41 @@
+<ion-view class="notepadScreen">
+ 
+      <ion-header-bar class="bar-positive">
+        <h1 class="title" style=" text-align: center">Notes</h1>
+      </ion-header-bar>
+
+      <ion-content>
+          <ion-list>
+                 <ion-item ng-repeat="task in tasks" ng-model="tasks">
+                     
+          <ion-option-button class="button-assertive"
+          ng-click="tasks.splice($index,1)">
+          delete
+          </ion-option-button>
+          <ion-option-button class="button-energized"
+          ng-click="edit(task)">
+          Edit
+          </ion-option-button>
+                     <i class="ion-ios-star  "></i>
+                     {{"  "+ task.title}}</ion-item>
+          </ion-list>
+      </ion-content>
+      <ion-footer-bar class="bar-positive">
+     
+<button class="button button-icon customIconSound" ng-click="newTask()">
+     <i class="ion-compose icon"></i>
+     Add
+</button>
+
+<button class="button button-icon customIconSound" ng-click="saveTasks()" style="margin-left:70px">
+     <i class="ion-ios-download-outline"></i>
+     Save
+</button>
+
+<button class="button button-icon .customIconSoundButton" ng-click="deleteAllTasks(tasks)"> 
+     <i class="ion-trash-b"></i>
+     Delete All
+</button>
+      </ion-footer-bar>
+
+</ion-view>

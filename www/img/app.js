@@ -1,6 +1,6 @@
 var db = null;
  
-var example = angular.module('starter', ['ionic', 'ngCordova','Loginstarter','SignUpstarter','Forgotstarter','FirstPagestarter','notepadstarter'])
+var example = angular.module('starter', ['ionic', 'ngCordova','Loginstarter','SignUpstarter'])
     .run(function($ionicPlatform, $cordovaSQLite) {
         $ionicPlatform.ready(function() {
             if(window.cordova && window.cordova.plugins.Keyboard) {
@@ -36,10 +36,10 @@ example.config(function($stateProvider,$urlRouterProvider){
        templateUrl:'templates/main.html',
        controller:'MainController'
    }) 
-    .state('notepad',{
-       url:'/notepad',
-       templateUrl:'templates/notepad.html',
-       controller:'NotepadController'
-   }) 
+      .state('app',{
+       url:'/app',
+       templateUrl:'templates/firstpage.html',
+      
+   })
    $urlRouterProvider.otherwise('/');
 });

@@ -1,8 +1,27 @@
-<ion-view view-title="Login" name="login-view" class="login_screen_bg">
+<!--<ion-view class="FirstpageScreen">
+     <ion-header-bar class="bar-stable" style=" text-align: center">
+        <h1 class="title">Welcome To Application</h1>
+      </ion-header-bar>
+<div class="tabs tabs-icon-top">
+  <a class="tab-item">
+    <i class="ion-ios-copy-outline"></i>
+    Home
+  </a>
+</div>
+</ion-view>-->
+<ion-view view-title="Firstpage" >
    <ion-header-bar class="bar-stable">
         <h1 class="title">Welcome To Application</h1>
       </ion-header-bar>
-  <ion-content class="padding" style="margin-top:300px">
-      <button class="button button-block button-calm" ng-click="loginToAccount('manish.raghuwanshi.app09@itbhu.ac.in','abc123')">Login</button>
-  </ion-content>
+  <div style="margin-top:100px">
+      <button class="button button-block button-calm" ng-click="getDataFromWebsite()">Get</button>
+  </div>
+  <div style="margin-top:10px" ng-model="IpValue">
+   <!--<button class="button button-block button-calm" ng-click="getDataFromWebsite()">{{IpValue.ip}}</button>-->
+   <label> Your Ip is: {{IpValue.Name}}</label>
+    </div>
+    
+    <div>
+      <button ng-click="GotoNotePadApplication()">Notepad</button>  
+    </div>
 </ion-view>

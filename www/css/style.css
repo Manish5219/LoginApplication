@@ -2,30 +2,20 @@
   background-image: url("../img/3.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  
-    display: table !important;
-  width: 100% !important;
-  height: 100% !important;
-
-display: table-cell;
+   display: table-cell;
   vertical-align: middle;
   text-align: center;
-
+color:#FFFFFF;
 }
 .login_screen_bg {
   background-image: url("../img/3.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  
-    display: table !important;
-  width: 100% !important;
-  height: 100% !important;
 
-display: table-cell;
-  vertical-align: middle;
   text-align: center;
 
 }    
+  
 .signup_screen_bg {
   background-image: url("../img/3.jpg");
   background-position: center;
@@ -40,3 +30,30 @@ display: table-cell;
   text-align: center;
 
 }   
+.forgotitem{
+    margin-top: 20px;
+     line-height: 90px;
+    font-size: 25px;    
+    color:#FFFFFF;
+    font-family: 'Roboto-Light';
+    opacity: 1;
+
+}
+.forgotitembelow
+{
+     margin-top: 2px;
+     line-height: 5px;
+    font-size: 18px;    
+    color:#FFFFFF;
+    font-family: 'Roboto-Light';
+    opacity: 1;
+}
+.notepadScreen
+{
+    background-image: url("../img/3.jpg");
+}
+.FirstpageScreen
+{
+    background-image: url("../img/3.jpg");
+     text-align: center;
+}
